@@ -39,8 +39,8 @@ public static void main(String[] args) {
                 System.out.println("Failed to fetch stock data");
             }
 
-            // Wait for 5 seconds
-            Thread.sleep(5000);
+            // Wait for 10 seconds
+            Thread.sleep(10000);
 
         } catch (Exception e) {
             System.out.println("Error Occured in the code" + e.getMessage());
