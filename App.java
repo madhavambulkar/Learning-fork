@@ -21,7 +21,7 @@ public static void main(String[] args) {
             // Dow Jones Industrial Average symbol
             Stock stock = YahooFinance.get("^DJI");
 
-            if (stock != null && stock.getQuote() != null) {
+            if (stock != null || stock.getQuote() != null) {
                 BigDecimal price = stock.getQuote().getPrice();
 
                 // Current timestamp
@@ -43,7 +43,7 @@ public static void main(String[] args) {
             Thread.sleep(5000);
 
         } catch (Exception e) {
-            System.out.println("Error occurred: " + e.getMessage());
+            System.out.println("Error Occured in the code" + e.getMessage());
         }
     }
 }```
